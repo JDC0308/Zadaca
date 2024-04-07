@@ -27,12 +27,3 @@ con.connect(function(err) {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-
-    app.listen(port, (err) => {
-        if (err) {
-            console.error('Greška prilikom pokretanja servera:' + err);
-            return;
-        }
-        console.log(`Web aplikacija pokrenuta na portu ${port}`);
-    });
-});
